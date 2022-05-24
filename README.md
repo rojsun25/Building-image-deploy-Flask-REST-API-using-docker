@@ -23,3 +23,8 @@ docker run -it -p  6666:9999 rojimage:latest
 
 ### Pull image from docker
 docker pull rojsun25/rojimage  
+
+  
+### Mount local storage to Docker Storage/Volume 
+{path)> docker run -it -p  9999:9999 -v <respective-path> :/rojimage save
+##### For example: D:\image\save>docker run -it -p  9999:9999 -v D:\image\test\:/rojimages save
