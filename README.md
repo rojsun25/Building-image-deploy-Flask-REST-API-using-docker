@@ -26,5 +26,9 @@ docker pull rojsun25/rojimage
 
   
 ### Mount local storage to Docker Storage/Volume 
-{path)> docker run -it -p  9999:9999 -v <respective-path> :/rojimage save
+  
+In Default whatever stored in container is lost once reboot your system. To synchronise the specific folders- makes stateful.
+
+  {path)> docker run -it -p  9999:9999 -v <respective-path> :/rojimage save
 ##### For example: D:\image\save>docker run -it -p  9999:9999 -v D:\image\test\:/rojimages save
+
